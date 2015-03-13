@@ -10,10 +10,10 @@
 		1C7958D61AAFF50F009F7FCA /* Points.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C7958D51AAFF50F009F7FCA /* Points.plist */; };
 		1C94ACBA1AB30AA90087C053 /* MAClusterAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C94ACB91AB30AA90087C053 /* MAClusterAnimator.m */; };
 		1C9F61001AB2E7770067DEE5 /* MAClusterAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9F60FF1AB2E7770067DEE5 /* MAClusterAnnotationView.m */; };
-		1CB3DB961AB1B61100AEB99C /* MAAnnotationCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB3DB951AB1B61100AEB99C /* MAAnnotationCluster.m */; };
 		1CB3DB9A1AB1B6AD00AEB99C /* GTQuadTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB3DB991AB1B6AD00AEB99C /* GTQuadTreeNode.m */; };
 		1CB3DB9D1AB1B6C300AEB99C /* GTQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB3DB9C1AB1B6C300AEB99C /* GTQuadTree.m */; };
 		1CB3DBA01AB1B6D700AEB99C /* MAClusteringManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB3DB9F1AB1B6D700AEB99C /* MAClusteringManager.m */; };
+		1CEBEBBC1AB348B000F0158A /* MAAnnotationCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CEBEBBB1AB348B000F0158A /* MAAnnotationCluster.m */; };
 		3A05D43817D97856002CF304 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A05D43717D97856002CF304 /* UIKit.framework */; };
 		3A05D43A17D97856002CF304 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A05D43917D97856002CF304 /* Foundation.framework */; };
 		3A05D43C17D97856002CF304 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A05D43B17D97856002CF304 /* CoreGraphics.framework */; };
@@ -124,8 +124,6 @@
 		1C94ACB91AB30AA90087C053 /* MAClusterAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAClusterAnimator.m; sourceTree = "<group>"; };
 		1C9F60FE1AB2E7770067DEE5 /* MAClusterAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAClusterAnnotationView.h; sourceTree = "<group>"; };
 		1C9F60FF1AB2E7770067DEE5 /* MAClusterAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAClusterAnnotationView.m; sourceTree = "<group>"; };
-		1CB3DB941AB1B61100AEB99C /* MAAnnotationCluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MAAnnotationCluster.h; path = FBAnnotationClustering/MAAnnotationCluster.h; sourceTree = "<group>"; };
-		1CB3DB951AB1B61100AEB99C /* MAAnnotationCluster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MAAnnotationCluster.m; path = FBAnnotationClustering/MAAnnotationCluster.m; sourceTree = "<group>"; };
 		1CB3DB981AB1B6AD00AEB99C /* GTQuadTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTQuadTreeNode.h; sourceTree = "<group>"; };
 		1CB3DB991AB1B6AD00AEB99C /* GTQuadTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTQuadTreeNode.m; sourceTree = "<group>"; };
 		1CB3DB9B1AB1B6C300AEB99C /* GTQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTQuadTree.h; sourceTree = "<group>"; };
@@ -133,6 +131,8 @@
 		1CB3DB9E1AB1B6D700AEB99C /* MAClusteringManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAClusteringManager.h; sourceTree = "<group>"; };
 		1CB3DB9F1AB1B6D700AEB99C /* MAClusteringManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAClusteringManager.m; sourceTree = "<group>"; };
 		1CB3DBA21AB1BA0000AEB99C /* MAAnnotationClustering.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MAAnnotationClustering.h; path = ../MAAnnotationClustering.h; sourceTree = "<group>"; };
+		1CEBEBBA1AB348B000F0158A /* MAAnnotationCluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAnnotationCluster.h; sourceTree = "<group>"; };
+		1CEBEBBB1AB348B000F0158A /* MAAnnotationCluster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAnnotationCluster.m; sourceTree = "<group>"; };
 		3A05D43417D97856002CF304 /* officialDemo2D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = officialDemo2D.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A05D43717D97856002CF304 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3A05D43917D97856002CF304 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -346,8 +346,8 @@
 				1CB3DBA21AB1BA0000AEB99C /* MAAnnotationClustering.h */,
 				1CB3DB9E1AB1B6D700AEB99C /* MAClusteringManager.h */,
 				1CB3DB9F1AB1B6D700AEB99C /* MAClusteringManager.m */,
-				1CB3DB941AB1B61100AEB99C /* MAAnnotationCluster.h */,
-				1CB3DB951AB1B61100AEB99C /* MAAnnotationCluster.m */,
+				1CEBEBBA1AB348B000F0158A /* MAAnnotationCluster.h */,
+				1CEBEBBB1AB348B000F0158A /* MAAnnotationCluster.m */,
 				1C94ACBD1AB310BB0087C053 /* QuadTree */,
 			);
 			name = Cluster;
@@ -819,6 +819,7 @@
 				1C94ACBA1AB30AA90087C053 /* MAClusterAnimator.m in Sources */,
 				3A05D4E217D97A32002CF304 /* PoiViewController.m in Sources */,
 				811843501855D73F00062CA8 /* RoomInfoViewController.m in Sources */,
+				1CEBEBBC1AB348B000F0158A /* MAAnnotationCluster.m in Sources */,
 				3A05D4E317D97A32002CF304 /* AddressComponentDetailViewController.m in Sources */,
 				3A05D4E417D97A32002CF304 /* BusLineDetailViewController.m in Sources */,
 				3A05D4E517D97A32002CF304 /* BusStopDetailViewController.m in Sources */,
@@ -834,7 +835,6 @@
 				810F09C0190F54010059439A /* TileOverlayViewController.m in Sources */,
 				811843521855D73F00062CA8 /* TicketViewController.m in Sources */,
 				3A05D4ED17D97A32002CF304 /* RoadInterDetailViewController.m in Sources */,
-				1CB3DB961AB1B61100AEB99C /* MAAnnotationCluster.m in Sources */,
 				3A05D4EE17D97A32002CF304 /* RouteDetailViewController.m in Sources */,
 				3A05D4EF17D97A32002CF304 /* SegmentDetailViewController.m in Sources */,
 				3A05D4F017D97A32002CF304 /* StepDetailViewController.m in Sources */,
