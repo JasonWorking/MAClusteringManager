@@ -1,4 +1,10 @@
 # MAClusteringManager
+
+### Demo 
+
+![image](https://raw.githubusercontent.com/JasonWorking/MAClusteringManager/master/makerCluster.gif)
+
+
 ###点聚合算法说明
 
 MAAnnotationClustering使用基于网格的点聚合算法，即：将当前mapView上可见区域划分成等大小的网格（网格大小根据缩放等级调整）Cell[0],Cell[1],Cell[2] ...，对于Cell[i],找出位于Cell[i]范围内的所有annotaion存为数组a[]，若a[]的元素个数为0，则不需要作为一个点显示，若a[]的元素个数为1，则作为普通的点，若a[]的元素个数大于或等于2，则将a[]中所有元素的平均经纬度作为一个簇的中心经纬度，以一个MAAnnotaionCluster实例代替。
@@ -8,6 +14,7 @@ MAAnnotationClustering使用基于网格的点聚合算法，即：将当前mapV
 [Quad-Tree](http://en.wikipedia.org/wiki/Quadtree)非常适合这种区域分割的搜索。可以将搜索算法的复杂度降为O(H*M),H为树的深度。
 
 该Demo仿照[TBAnnotationClustering](https://github.com/JasonWorking/TBAnnotationClustering)写的。
+
 ### Cluster目录下
 
 ####底层数据结构： Quad Tree 
