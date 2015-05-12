@@ -8,14 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <MAMapKit/MAMapKit.h>
-#import <AMapSearchKit/AMapSearchAPI.h>
 
-@interface BaseMapViewController : UIViewController<MAMapViewDelegate, AMapSearchDelegate>
+@interface BaseMapViewController : UIViewController<MAMapViewDelegate>
 
 @property (nonatomic, strong) MAMapView *mapView;
-
-@property (nonatomic, strong) AMapSearchAPI *search;
-
-- (void)returnAction;
 
 @end

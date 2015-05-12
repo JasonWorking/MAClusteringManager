@@ -14,7 +14,7 @@
 /**
  *  
  
-    Quad tree class, @see  http://en.wikipedia.org/wiki/Quadtree and http://www.cs.berkeley.edu/~demmel/cs267/lecture26/lecture26.html for more details. The MAMapKit has a implementation for quad tree called "MAQuadTree", but it's private. This class behevior the same with the "MAQuadTree" but add some convinient methods. e.g. The "MAQuadTree" gives us "annotationsInBoudingBox:" , we change it to block enabeld : "- (void)enumerateAnnotationsInBox:(MABoundingBox)box usingBlock:(void (^)(id<MAAnnotation> obj))block; Also, we don't support "updateAnnotation:fromOldPosition:" that is supported in MAMapKit/MAQuadTree.
+    Quad tree class, @see  http://en.wikipedia.org/wiki/Quadtree and http://www.cs.berkeley.edu/~demmel/cs267/lecture26/lecture26.html for more details. The MAMapKit has a implementation for quad tree called "MAQuadTree", but it's private. This class behaviors the same with the "MAQuadTree" but add some convinient methods. e.g. The "MAQuadTree" gives us "annotationsInBoudingBox:" , we change it to block enabeld : "- (void)enumerateAnnotationsInBox:(MABoundingBox)box usingBlock:(void (^)(id<MAAnnotation> obj))block; Also, we don't support "updateAnnotation:fromOldPosition:" that is supported in MAMapKit/MAQuadTree.
  
  
  */

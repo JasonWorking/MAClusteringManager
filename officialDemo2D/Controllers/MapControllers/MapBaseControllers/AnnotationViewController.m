@@ -19,10 +19,7 @@ enum {
 
 @interface AnnotationViewController () < MAClusteringManagerDelegate>
 
-@property (nonatomic, assign) double lastZoomLevel;
-
 @property (nonatomic, strong) MAClusteringManager *clusteringManager;
-
 
 @property (nonatomic, strong) MAClusterAnimator *animator;
 @end
@@ -45,37 +42,30 @@ enum {
     self.clusteringManager = [[MAClusteringManager alloc] initWithAnnotations:array];
     self.clusteringManager.delegate = self;
     
+    
     self.mapView.centerCoordinate = CLLocationCoordinate2DMake(-10.400160,0.633803);
     self.mapView.zoomLevel = self.mapView.minZoomLevel;
+    
+    //Perform a clustering
     [self mapView:self.mapView regionDidChangeAnimated:NO];
 }
 
 
-- (void)viewDidAppear:(BOOL)animated
-{
-// override to avoid BaseViewController's behevior
 
-}
 
 
 #pragma mark - MAMapViewDelegate
 
 - (void)mapView:(MAMapView *)mapView regionDidChangeAnimated:(BOOL)animated
 {
-    NSLog(@"center coordinate : (%f,%f)", mapView.centerCoordinate.latitude, mapView.centerCoordinate.longitude);
-    double newLevel = mapView.zoomLevel;
-    if (self.lastZoomLevel != newLevel) {
-        NSLog(@"Zoom level changed to :%f ! ",newLevel);
-        self.lastZoomLevel = newLevel;
-        // When zoom level changed, We add a new operation queue to do the clustering
-        [[NSOperationQueue new] addOperationWithBlock:^{
-            double scale = self.mapView.bounds.size.width / self.mapView.visibleMapRect.size.width;
-            NSArray *annotations = [self.clusteringManager clusteredAnnotationsWithinMapRect:mapView.visibleMapRect withZoomScale:scale];
-            
-            // The clusteringManager will get the main queue to do the UI stuff.
-            [self.clusteringManager displayAnnotations:annotations onMapView:mapView];
-        }];
-    }
+    // We add a new operation queue to do the clustering
+    [[NSOperationQueue new] addOperationWithBlock:^{
+        double scale = self.mapView.bounds.size.width / self.mapView.visibleMapRect.size.width;
+        NSArray *annotations = [self.clusteringManager clusteredAnnotationsWithinMapRect:mapView.visibleMapRect withZoomScale:scale];
+        
+        // The clusteringManager will get the main queue to do the UI stuff.
+        [self.clusteringManager displayAnnotations:annotations onMapView:mapView];
+    }];
     
 }
 

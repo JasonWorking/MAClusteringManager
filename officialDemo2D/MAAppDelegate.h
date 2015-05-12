@@ -8,12 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class MAViewController;
 
 @interface MAAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) MAViewController *viewController;
 
 @end
